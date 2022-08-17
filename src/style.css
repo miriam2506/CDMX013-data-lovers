@@ -1,5 +1,3 @@
-
-
 body {
     width: 100%;
     height: 100vh;
@@ -7,14 +5,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 
-    }
+}
 
 
-  .fire{
-     
-      height: auto;
+.fire {
+    height: auto;
     margin-top: 18%;
-padding-left: 1500px;
+    padding-left: 1500px;
 }
 
-}
