@@ -6,11 +6,17 @@ body {
     background-repeat: no-repeat;
 
 }
+.last{
+width: 15%;
 
+}
+.fire
+{
+    border-radius: 100px;
+    
+  padding-left: 1300px;
+position: initial
+border-radius:100px;
 
-.fire {
-    height: auto;
-    margin-top: 18%;
-    padding-left: 1500px;
 }
 
