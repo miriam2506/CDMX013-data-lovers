@@ -1,4 +1,7 @@
 import allData from'./data/ghibli/ghibli.js'
+import {firstDirector} from'./data.js'
+const director=allData.director;
+
 const root=document.getElementById('root')
 
 const films=allData.films
@@ -21,3 +24,5 @@ const generadorHTML=(films)=>{
     return div
 }
 films.forEach(oneFilm=>root.appendChild(generadorHTML(oneFilm))) 
+
+

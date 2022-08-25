@@ -1,9 +1,6 @@
-// estas funciones son de ejemplo
 
-export const example = () => {
-  return 'example';
+export const firstDirector=(director)=> {
+  let filterByDirector= director.filter(director=>director.films==='Hayao Miyazaki');
+ console.log= "filterByDirector";
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
