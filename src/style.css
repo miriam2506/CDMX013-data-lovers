@@ -157,4 +157,10 @@ button {
   border: 2px solid #0016;
   justify-content: center;
 }
-
+.filmStyle:hover {
+  width: 15;
+  border: 25;
+  margin: 25;
+    box-shadow: 20px 20px 20px 20px rgba(255, 255, 255, 255);
+    height: 25;
+  }
