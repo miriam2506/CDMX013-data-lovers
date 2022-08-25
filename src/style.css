@@ -28,18 +28,19 @@ body {
 h1 {
   font-family: 'Ghibli Regular';
   position: absolute;
-  left: 440px;
-  top: 230px;
+  left: 365px;
+  top: 160px;
   color: transparent;
   margin: auto;
-  font-size: 38px;
+  font-size: 60px;
   -webkit-text-stroke: .2px rgb(182, 99, 36);
 }
 
 .fire {
   display: flex;
-  margin-left: 170px;
-  border-radius: 15%;
+  margin-top: -20px;
+  margin-left: 160px;
+  border-radius: 10px 10px;
 }
 
 h3 {
@@ -82,7 +83,7 @@ border-radius: 30% 5%;
   margin-left: 55px;
   border-style: double;
   border-top-color: rgb(148, 207, 232);
-  border-width: px;
+  border-width: 3px;
   padding-top: 3px;
 }
 
@@ -128,8 +129,7 @@ button {
   background-color: skyblue;
   border-radius: 20px;
   opacity: 80%;
-  
-  border: 2px solid #0016;
+   border: 2px solid #0016;
   justify-content: center;
 }
 
