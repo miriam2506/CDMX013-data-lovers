@@ -158,3 +158,13 @@ button {
   justify-content: center;
 }
 
+.categorie2 {
+  padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #030A69;
+    background-color: skyblue;
+    border-radius: 20px;
+    border: 2px solid #0016;
+    justify-content: center;
+}

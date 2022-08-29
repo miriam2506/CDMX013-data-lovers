@@ -1,6 +1,6 @@
 import allData from'./data/ghibli/ghibli.js'
-import {firstDirector} from'./data.js'
-const director=allData.director;
+import {filterByDirector} from'./data.js'
+//const director=allData.director;
 
 const root=document.getElementById('root')
 
@@ -23,6 +23,17 @@ const generadorHTML=(films)=>{
     div.append(poster,title,year)
     return div
 }
+
 films.forEach(oneFilm=>root.appendChild(generadorHTML(oneFilm))) 
+
+document.getElementById ('sort2').addEventListener ('change',function(e){
+    console.log (e.target.value)
+    root.innerHTML=""
+    filterByDirector(films).forEach(oneFilm=>root.appendChild(generadorHTML(oneFilm))) 
+})
+
+console.log (filterByDirector(films))
+
+//acepte por argumento 
 
 
