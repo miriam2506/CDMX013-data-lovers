@@ -1,4 +1,3 @@
-//import allData from'./data/ghibli/ghibli.js';
   export const filterByDirector= (films, directorName)=>{
   const Directors=films.filter(film=>{
   return film.director === directorName

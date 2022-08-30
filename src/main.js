@@ -23,21 +23,22 @@ const generadorHTML = (films) => {
     div.append(poster, title, year)
     return div
 }
-
 films.forEach(oneFilm=>root.appendChild(generadorHTML(oneFilm))) 
 
-document.getElementById ('sort2').addEventListener ('change',function(e){
+document.getElementById ('filterDirector').addEventListener ('change',function(e){
     console.log (e.target.value)
     root.innerHTML=""
-   filterByDirector(films, e.target.value).forEach(oneFilm=>root.appendChild(generadorHTML(oneFilm))) 
+    if (e.target.value=="All Directors"){
+    films.forEach(oneFilm=>root.appendChild(generadorHTML(oneFilm)))
+    }
+    else{
+        filterByDirector(films, e.target.value).forEach(oneFilm=>root.appendChild(generadorHTML(oneFilm))) 
+        
+    }
     
 
+
 })
-
-
-
-
-
 //acepte por argumento
 
 
