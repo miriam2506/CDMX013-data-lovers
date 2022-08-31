@@ -19,12 +19,12 @@ export const filterByYear = (films, releaseDate) => {
   return Years
 }
 
-//export const filterTerrain=(films, Terrain) => {
-  //const Terrains = films.locations.filter(film=> {
-   // return film.locations.terrain===Terrain
-  //})
-  //return Terrains
-//}
+export const filterTerrain=(films,Terrain) => {
+let Terrains = films.locations.filter(film=> {
+ return film.terrain===Terrain
+})
+return Terrains
+}
 //if para retornar todos rreturn peliculas
 //else film.filter (director)
 //export const Directors=(films)=>{

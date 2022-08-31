@@ -1,5 +1,5 @@
 import allData from './data/ghibli/ghibli.js'
-import { filterByDirector, filterByProducer, filterByYear, } from './data.js'
+import { filterByDirector, filterByProducer, filterByYear, filterTerrain } from './data.js'
 
 
 const root = document.getElementById('root')
@@ -57,8 +57,8 @@ document.getElementById('filterReleaseyear').addEventListener('change', function
         filterByYear(films, e.target.value).forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
     }
 })
-/*document.getElementById('filterByTerrain').addEventListener('change', function (e) {
-    console.log(e.target.value)
+document.getElementById('filterByTerrain').addEventListener('change', function (e) {
+    console.log (e.target.value)
     root.innerHTML = ""
     if (e.target.value == "Terraines") {
         films.forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
@@ -68,4 +68,4 @@ document.getElementById('filterReleaseyear').addEventListener('change', function
 
     }
 
-})*/
+})
