@@ -4,31 +4,30 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css" />
-  <title>Ghiblary</title>
+  <title>Ghiblibrary</title>
 </head>
 
 <body>
-
   <header>
     <main>
       <div class="logos">
-        <img class="logos" src="/img/last.png" alt="Last Ghibli logo" width="150px"/>
-        <img class="logos" src="/img/logo_actual.webp" alt="Actual Ghibli Logo"width=150px/>
-            </div>
+        <img class="logos" src="/img/last.png" alt="Last Ghibli logo" width="100px" />
+        <img class="logos" src="/img/logo_actual.webp" alt="Actual Ghibli Logo" width=100px />
+      </div>
     </main>
   </header>
- <div class="fire">
-  
-  <video class="fire" src="/img/Howl Sleeping with Calcifer vibing on the Train Ambience (Studio Ghibli ASMR Ambience).mp4"  controls="audioplay" type="video/mp4" width="500px" >
-  </video>   </div>
+  <div class="fire">
 
-
+    <video class="fire"
+      src="/img/Howl Sleeping with Calcifer vibing on the Train Ambience (Studio Ghibli ASMR Ambience).mp4"
+      controls="audioplay" type="video/mp4" width="350px">
+    </video>
+  </div>
   <h1>GHIBLIBRARY</h1>
-
   <nav>
     <h3>
       <pre>
-      Giblibrary is an encyclopedia of all the works of Studio Ghibli's past, present and future. 
+      Ghiblibrary is an encyclopedia of all the works of Studio Ghibli's past, present and future. 
       
       Films, Characters and shorts can be found here.The studio is best known for its animated feature 
       films, such as Princess Mononoke, Spirited Away and Howl's Moving Castle. These films exemplify 
@@ -36,44 +35,81 @@
     </h3>
     <div class="menu">
       <ul>
-        
-        <nav><center>
+
+        <nav>
+          <center>
           <div class="menu">
-            <button id="inicio" onclick="location.reload()">All Movies</button>
-            <select class="categorie1" name="status1" id="sort1">
-              <option value="">Order</option>
-                <option value="">A-Z</option>
-                <option value="">Z-A</option>
-            <i class="fa-light fa-arrow-up-a-z"></i>
+          <button id="inicio" onclick="location.reload()">All Movies</button>
+            <select class="categorie1" name="status1" id="selectOrder">
+              <optgroup class="categorie1">
+                <option value="order">Order</option>
+                <option value="A to Z" id="OrderAtoZ">A to Z</option>
+                <option value="Z to A" id="OrderZtoA">Z to A</option>
+                </optgroup>
             </select>
             <select class="categorie2" name="status2" id="filterDirector">
               <option value="All Directors">All Directors</option>
-            <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-            <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-            <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-            <option value="Isao Takahata">Isao Takahata</option>
+              <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+              <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+              <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+              <option value="Isao Takahata">Isao Takahata</option>
+            </select>
+
+            <button id="random" onclick="location.reload()">Random &#128270;</button>
+
+            <select class="categorie3" name="status3" id="filterProducer">
+              <option value="All Producers">All Producers</option>
+              <option value="Isao Takahata">Isao Takahata</option>
+              <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+              <option value="Toru Hara">Toru Hara</option>
+              <option value="Toshio Suzuki">Toshio Suzuki</option>
+            </select>
+
+            <select class="categorie4" name="status4" id="filterReleaseyear">
+              <option value="Year">Year</option>
+              <option value="1986">1986</option>
+              <option value="1988">1988</option>
+              <option value="1989">1989</option>
+              <option value="1991">1991</option>
+              <option value="1992">1992</option>
+              <option value="1995">1995</option>
+              <option value="1997">1997</option>
+              <option value="1999">1999</option>
+              <option value="2001">2001</option>
+              <option value="2002">2002</option>
+              <option value="2004">2004</option>
+              <option value="2006">2006</option>
+              <option value="2008">2008</option>
+              <option value="2011">2011</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+
+           
+
             </select>
 
           </div>
-        </nav></center>
+          </center>
+        </nav>
       </ul>
     </div>
 
-
-
     <section>
       <article>
-                <div id="root"></div>
+        <div id="root"></div>
         </div>
       </article>
     </section>
 
     <footer>
-      <h4>Derechos reservados de Bere Días y Miriam Cortes</h4>
+      <h4>Derechos reservados de Bere Díaz y Miriam Cortes</h4>
     </footer>
+
     <script src="main.js" type="module"></script>
 
-  </body>
+</body>
 </main>
 
 </html>
+
+

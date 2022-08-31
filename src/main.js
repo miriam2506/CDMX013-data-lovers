@@ -1,9 +1,8 @@
 import allData from './data/ghibli/ghibli.js'
-import { filterByDirector } from './data.js'
-//const director=allData.director;
+import { filterByDirector, filterByProducer, filterByYear, } from './data.js'
+
 
 const root = document.getElementById('root')
-
 const films = allData.films
 
 const generadorHTML = (films) => {
@@ -23,24 +22,50 @@ const generadorHTML = (films) => {
     div.append(poster, title, year)
     return div
 }
-films.forEach(oneFilm=>root.appendChild(generadorHTML(oneFilm))) 
+films.forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
 
-document.getElementById ('filterDirector').addEventListener ('change',function(e){
-    console.log (e.target.value)
-    root.innerHTML=""
-    if (e.target.value=="All Directors"){
-    films.forEach(oneFilm=>root.appendChild(generadorHTML(oneFilm)))
+document.getElementById('filterDirector').addEventListener('change', function (e) {
+    console.log(e.target.value)
+    root.innerHTML = ""
+    if (e.target.value == "All Directors") {
+        films.forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
     }
-    else{
-        filterByDirector(films, e.target.value).forEach(oneFilm=>root.appendChild(generadorHTML(oneFilm))) 
-        
+    else {
+        filterByDirector(films, e.target.value).forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
     }
-    
-
-
 })
-//acepte por argumento
 
 
+document.getElementById('filterProducer').addEventListener('change', function (e) {
+    console.log(e.target.value)
+    root.innerHTML = ""
+    if (e.target.value == "All Producers") {
+        films.forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
+    }
+    else {
+        filterByProducer(films, e.target.value).forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
+    }
+})
 
-//films.forEach(film.director=>root.appendChild(generadorHTML(film.director))) 
+document.getElementById('filterReleaseyear').addEventListener('change', function (e) {
+    console.log(e.target.value)
+    root.innerHTML = ""
+    if (e.target.value == "Year") {
+        films.forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
+    }
+    else {
+        filterByYear(films, e.target.value).forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
+    }
+})
+/*document.getElementById('filterByTerrain').addEventListener('change', function (e) {
+    console.log(e.target.value)
+    root.innerHTML = ""
+    if (e.target.value == "Terraines") {
+        films.forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
+    }
+    else {
+        filterTerrain(films, e.target.value).forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
+
+    }
+
+})*/

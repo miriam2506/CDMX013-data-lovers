@@ -1,11 +1,30 @@
-  export const filterByDirector= (films, directorName)=>{
-  const Directors=films.filter(film=>{
-  return film.director === directorName
+export const filterByDirector = (films, directorName) => {
+  const Directors = films.filter(film => {
+    return film.director === directorName
   })
   return Directors
-  }
-  
+}
 
+export const filterByProducer = (films, producerName) => {
+  const Producers = films.filter(film => {
+    return film.producer === producerName
+  })
+  return Producers
+}
+
+export const filterByYear = (films, releaseDate) => {
+  const Years = films.filter(film => {
+    return film.release_date === releaseDate
+  })
+  return Years
+}
+
+//export const filterTerrain=(films, Terrain) => {
+  //const Terrains = films.locations.filter(film=> {
+   // return film.locations.terrain===Terrain
+  //})
+  //return Terrains
+//}
 //if para retornar todos rreturn peliculas
 //else film.filter (director)
 //export const Directors=(films)=>{
