@@ -5,6 +5,7 @@ export const filterByDirector = (films, directorName) => {
   return Directors
 }
 
+
 export const filterByProducer = (films, producerName) => {
   const Producers = films.filter(film => {
     return film.producer === producerName
@@ -19,34 +20,46 @@ export const filterByYear = (films, releaseDate) => {
   return Years
 }
 
-export const filterTerrain=(films,Terrain) => {
-let Terrains = films.locations.filter(film=> {
- return film.terrain===Terrain
-})
-return Terrains
-}
-//if para retornar todos rreturn peliculas
-//else film.filter (director)
-//export const Directors=(films)=>{
-//let director=films.filter(films=>films.director==='Hayao Miyazaki')
-//return director
-//}
-//console.log ("si funciona")
-/*export const AllMovies?? = (data, condition) => {
-    return ..........(condition);
-  };
-  export const ..... = (data, Order) => {
-    if (Order === "a_z") {
-      return ......(function (a, b) {
-        if (a.name > b.name) {
-          return 1;
-        }
-        if (a.name < b.name) {
-          return -1;
-        }
-        return 0;
-      });
-    } else {
-      return data.reverse();
+
+export function sortFilms(films, orderOption)  {
+    if (orderOption === "A to Z") {
+    return [...films].sort((a, b) => {
+      if (a.title < b.title) {
+        return -1
+      }
+     if (a.title > b.title) {
+     return 1
     }
-  };*/
+     return 0
+    });
+      }
+      else if (orderOption === "Z to A" ) {
+        return [...films].sort((b,a) => {
+          if (a.title < b.title) {
+            return -1
+          }
+         if (a.title > b.title) {
+         return 1
+        }
+         return 0
+        });
+      }
+    }  
+
+
+
+    /*export const filterTerrain = films.forEach(film =>{
+  return film.locations.forEach(location =>{
+    return location.terrain.filter(terrain =>{
+    return terrain
+  })
+})
+})
+return filterTerrain
+
+export const filterByTitle = (films, titleName) => {
+  const Titles = films.filter(film => {
+    return film.title === titleName
+  })
+  return Titles
+}*/
