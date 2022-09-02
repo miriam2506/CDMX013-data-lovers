@@ -2,7 +2,6 @@ import allData from './data/ghibli/ghibli.js'
 import { filterByDirector, filterByProducer, filterByYear, sortFilms } from './data.js'
 
 const root = document.getElementById('root')
-const originData = allData.films
 
 const films = allData.films
 
@@ -26,7 +25,7 @@ const generadorHTML = (films) => {
 films.forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
 
 document.getElementById('filterDirector').addEventListener('change', function (e) {
-    console.log(e.target.value)
+    
     root.innerHTML = ""
     if (e.target.value == "All Directors") {
         films.forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
@@ -38,7 +37,6 @@ document.getElementById('filterDirector').addEventListener('change', function (e
 
 
 document.getElementById('filterProducer').addEventListener('change', function (e) {
-    console.log(e.target.value)
     root.innerHTML = ""
     if (e.target.value == "All Producers") {
         films.forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
@@ -49,7 +47,7 @@ document.getElementById('filterProducer').addEventListener('change', function (e
 })
 
 document.getElementById('filterReleaseyear').addEventListener('change', function (e) {
-    console.log(e.target.value)
+    
     root.innerHTML = ""
     if (e.target.value == "Year") {
         films.forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
@@ -61,17 +59,13 @@ document.getElementById('filterReleaseyear').addEventListener('change', function
 
 
 document.getElementById('selectOrder').addEventListener('change', function (e) {
-    console.log(e.target.value)
     root.innerHTML = ""
 
     if (e.target.value === "Order") {
-        console.log("si entra condicional")
         films.forEach(oneFilm =>root.appendChild(generadorHTML(oneFilm)))
-        console.log(allData.films)
     }
     else {
         sortFilms(films, e.target.value).forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
-        console.log(sortFilms)
     }
 })
 

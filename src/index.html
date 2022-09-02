@@ -9,21 +9,23 @@
 
 <body>
   <header>
-    <main>
-      <div class="logos">
-        <img class="logos" src="/img/last.png" alt="Last Ghibli logo" width="100px" />
-        <img class="logos" src="/img/logo_actual.webp" alt="Actual Ghibli Logo" width=100px />
-      </div>
-    </main>
-  </header>
-  <div class="fire">
 
+    <div class="logos">
+      <img class="logos" src="/img/last.png" alt="Last Ghibli logo" width="100px" />
+      <img class="logos" src="/img/logo_actual.webp" alt="Actual Ghibli Logo" width="100px" />
+    </div>
+
+  </header>
+
+  <div class="fire">
     <video class="fire"
       src="/img/Howl Sleeping with Calcifer vibing on the Train Ambience (Studio Ghibli ASMR Ambience).mp4"
       controls="audioplay" type="video/mp4" width="350px">
     </video>
   </div>
+
   <h1>GHIBLIBRARY</h1>
+
   <nav>
     <h3>
       <pre>
@@ -31,100 +33,93 @@
       
       Films, Characters and shorts can be found here.The studio is best known for its animated feature 
       films, such as Princess Mononoke, Spirited Away and Howl's Moving Castle. These films exemplify 
-      the master story telling of environmentalism, friendship, love, family, culture and war.</pre>
+      the master story telling of environmentalism, friendship, love, family, culture and war.
+    </pre>
     </h3>
-    <div class="menu">
-      <ul>
 
-        <nav>
-          <center>
-          <div class="menu">
+   
+
+      <div center>
+        <div class="menu">
           <button id="inicio" onclick="location.reload()">All Movies</button>
-         
           <select class="categorie1" name="status1" id="selectOrder">
-              
-                <option value="Order">Order</option>
-                <option value="A to Z" id="OrderAtoZ">A to Z</option>
-                <option value="Z to A" id="OrderZtoA">Z to A</option>
-                </optgroup>
-            </select>
-            <select class="categorie2" name="status2" id="filterDirector">
-              <option value="All Directors">All Directors</option>
-              <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-              <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-              <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-              <option value="Isao Takahata">Isao Takahata</option>
-            </select>
 
-            <button id="random" onclick="location.reload()">Random &#128270;</button>
+            <option value="Order">Order</option>
+            <option value="A to Z" id="OrderAtoZ">A to Z</option>
+            <option value="Z to A" id="OrderZtoA">Z to A</option>
 
-            <select class="categorie3" name="status3" id="filterProducer">
-              <option value="All Producers">All Producers</option>
-              <option value="Isao Takahata">Isao Takahata</option>
-              <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-              <option value="Toru Hara">Toru Hara</option>
-              <option value="Toshio Suzuki">Toshio Suzuki</option>
-            </select>
+          </select>
+          <select class="categorie2" name="status2" id="filterDirector">
+            <option value="All Directors">All Directors</option>
+            <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+            <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+            <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+            <option value="Isao Takahata">Isao Takahata</option>
+          </select>
 
-            <select class="categorie4" name="status4" id="filterReleaseyear">
-              <option value="Year">Year</option>
-              <option value="1986">1986</option>
-              <option value="1988">1988</option>
-              <option value="1989">1989</option>
-              <option value="1991">1991</option>
-              <option value="1992">1992</option>
-              <option value="1995">1995</option>
-              <option value="1997">1997</option>
-              <option value="1999">1999</option>
-              <option value="2001">2001</option>
-              <option value="2002">2002</option>
-              <option value="2004">2004</option>
-              <option value="2006">2006</option>
-              <option value="2008">2008</option>
-              <option value="2011">2011</option>
-              <option value="2013">2013</option>
-              <option value="2014">2014</option>
-            </select>
+          <button id="random" onclick="location.reload()">Random &#128270;</button>
 
-              <select class="categorie5" name="status5" id="filterByTerrain">
-                <option value="Terraines">Terraines</option>
-                <option value="TODO">TODO</option>
-                <option value="Hill">Hill</option>
-                <option value="City">City</option>
-                <option value="River">River</option>
-                <option value="Mountain">Mountain</option>
-                <option value="Forest">Forest</option>
-                <option value="Plain">Plain</option>
-                <option value="Earthsea">Earthsea</option>
-                <option value="Ocean">Ocean</option>
-                <option value="Marsh">Marsh</option>
-              </select>
-  
-           
+          <select class="categorie3" name="status3" id="filterProducer">
+            <option value="All Producers">All Producers</option>
+            <option value="Isao Takahata">Isao Takahata</option>
+            <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+            <option value="Toru Hara">Toru Hara</option>
+            <option value="Toshio Suzuki">Toshio Suzuki</option>
+          </select>
 
+          <select class="categorie4" name="status4" id="filterReleaseyear">
+            <option value="Year">Year</option>
+            <option value="1986">1986</option>
+            <option value="1988">1988</option>
+            <option value="1989">1989</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1995">1995</option>
+            <option value="1997">1997</option>
+            <option value="1999">1999</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2004">2004</option>
+            <option value="2006">2006</option>
+            <option value="2008">2008</option>
+            <option value="2011">2011</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+          </select>
 
-          </div>
-          </center>
-        </nav>
-      </ul>
+          <select class="categorie5" name="status5" id="filterByTerrain">
+            <option value="Terraines">Terraines</option>
+            <option value="TODO">TODO</option>
+            <option value="Hill">Hill</option>
+            <option value="City">City</option>
+            <option value="River">River</option>
+            <option value="Mountain">Mountain</option>
+            <option value="Forest">Forest</option>
+            <option value="Plain">Plain</option>
+            <option value="Earthsea">Earthsea</option>
+            <option value="Ocean">Ocean</option>
+            <option value="Marsh">Marsh</option>
+          </select>
+
+      </center>
     </div>
+  </nav>
 
-    <section>
-      <article>
-        <div id="root"></div>
-        </div>
-      </article>
-    </section>
+  <section>
+    <article>
+      <div id="root"></div>
 
-    <footer>
-      <h4>Derechos reservados de Bere Díaz y Miriam Cortes</h4>
-    </footer>
+    </article>
+  </section>
 
-    <script src="main.js" type="module"></script>
 
+  <footer>
+    <h4>Derechos reservados de Bere Díaz y Miriam Cortes</h4>
+
+  </footer>
+
+  <script src="main.js" type="module"></script>
 </body>
-</main>
+
 
 </html>
-
-

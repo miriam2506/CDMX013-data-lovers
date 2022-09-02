@@ -21,45 +21,45 @@ export const filterByYear = (films, releaseDate) => {
 }
 
 
-export function sortFilms(films, orderOption)  {
-    if (orderOption === "A to Z") {
+export function sortFilms(films, orderOption) {
+  if (orderOption === "A to Z") {
     return [...films].sort((a, b) => {
       if (a.title < b.title) {
         return -1
       }
-     if (a.title > b.title) {
-     return 1
-    }
-     return 0
+      else if (a.title > b.title) {
+        return 1
+      }
+      return 0
     });
+  }
+  else if (orderOption === "Z to A") {
+    return [...films].sort((b, a) => {
+      if (a.title < b.title) {
+        return -1
       }
-      else if (orderOption === "Z to A" ) {
-        return [...films].sort((b,a) => {
-          if (a.title < b.title) {
-            return -1
-          }
-         if (a.title > b.title) {
-         return 1
-        }
-         return 0
-        });
+      if (a.title > b.title) {
+        return 1
       }
-    }  
+      return 0
+    });
+  }
+}
 
 
 
-    /*export const filterTerrain = films.forEach(film =>{
-  return film.locations.forEach(location =>{
-    return location.terrain.filter(terrain =>{
-    return terrain
-  })
+/*export const filterTerrain = films.forEach(film =>{
+return film.locations.forEach(location =>{
+return location.terrain.filter(terrain =>{
+return terrain
+})
 })
 })
 return filterTerrain
 
 export const filterByTitle = (films, titleName) => {
-  const Titles = films.filter(film => {
-    return film.title === titleName
-  })
-  return Titles
+const Titles = films.filter(film => {
+return film.title === titleName
+})
+return Titles
 }*/
