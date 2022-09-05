@@ -1,4 +1,4 @@
-import { filterByDirector } from '../src/data.js';
+import { filterByDirector, filterByProducer, sortFilms} from '../src/data.js';
 
 describe('filterByDirector', () => {
   it('filtra por Director Hayao Miyazaki', () => {
@@ -18,32 +18,53 @@ describe('filterByDirector', () => {
 
 });
 
-describe('sortFilms', ()=>{
+describe('filterByProducer', () => {
+  it('filtrar por producer Isao Takahata', () => {
 
-  it('should sort by films ascending', ()=>{
-      const arrExpected = [{title: 'Castle in the Sky'}, {title: 'Kikis Delivery Service'}];
-
-      console.log(arrExpected);
+    let data=[
+        {producer:'Isao Takahata'},
+        {producer:'Hayao Miyazaki'}
+      ];
+  
+      let producer='Isao Takahata';
+      
+      let resultadoEsperado=[{producer:'Isao Takahata'}];
+  
+      let resultadoReal=filterByProducer(data, producer);
+  
+      expect(resultadoReal).toEqual(resultadoEsperado);
+    })
   });
 
-  it('should sort by films descneding', ()=>{
-
-  });
-
-});
-/*;
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-*/
+  describe('sortFilms', () => {
+    it('ascending Order', () => {
+  
+      let data=[
+        {title:'Castle in the sky'},
+        {title:'W'}];
+    
+        let sortTitleas='A to Z';
+    
+        let resultadoEsperado=[{title:'Castle in the sky'},{title:'W'}];
+    
+        let resultadoReal=sortFilms(data, sortTitleas);
+    
+        expect(resultadoReal).toStrictEqual(resultadoEsperado);
+      });
+  
+      it('descending Order', () => {
+  
+        let data=[{title:'When marnie was there'},
+            {title:'Castle in the sky'}];
+      
+          let sortTitledes='Z to A';
+      
+          let resultadoEsperado=[{title:'When marnie was there'},{title:'Castle in the sky'}];
+      
+          let resultadoReal=sortFilms(data, sortTitledes);
+      
+          expect(resultadoReal).toStrictEqual(resultadoEsperado);
+        });
+      });
+  
+  

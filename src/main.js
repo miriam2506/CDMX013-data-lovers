@@ -67,7 +67,7 @@ document.getElementById('selectOrder').addEventListener('change', function (e) {
     else {
         sortFilms(films, e.target.value).forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
     }
-})
+});
 
 /*document.getElementById('filterByTerrain').addEventListener('change', function (e) {
     console.log (e.target.value)
@@ -82,3 +82,4 @@ document.getElementById('selectOrder').addEventListener('change', function (e) {
 
 })
 */
+
