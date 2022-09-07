@@ -8,10 +8,10 @@
 * [4. Historia de usuario 2](#4-HU2)
 * [5. Historia de usuario 3](#5-HU3)
 * [6. Historia de usuario 4](#6-HU4)
-* [6. Historia de usuario 5](#6-HU5)
-* [6. Historia de usuario 6](#6-HU46)
+* [7. Historia de usuario 5](#6-HU5)
+* [8. Historia de usuario 6](#6-HU46)
 
-* [7. Pistas, tips y lecturas complementarias](#7-pistas-tips-y-lecturas-complementarias)
+* [9. Pistas, tips y lecturas complementarias](#7-pistas-tips-y-lecturas-complementarias)
 
 ***
 
