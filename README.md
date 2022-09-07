@@ -174,7 +174,7 @@ Los temas que implementamos y aprendimos en este proyecto fueron los siguientes:
 
   * [import - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/import)
   * [export - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/export)
-</p></details>
+  </p></details>
 
 - [Y] **Uso de linter (ESLINT)**
 
@@ -223,24 +223,21 @@ Los temas que implementamos y aprendimos en este proyecto fueron los siguientes:
 
 ## 4. Historia de Usuario 1
 
-Yo como usuario [visitante del sitio] quiero poder VER todos los personajes/películas/deportistas para familiarizarme.
+Yo como fanática de Studio Ghibli, quiero conocer toda la filmografía por año y las más vistas, con  el objetivo de saber la evolución de las producciones y las características de cada una.
 
-**Criterios de Aceptación. Edita/agrega de acuerdo a tu implementación exactamente:**
+**Criterios de Aceptación.**
 
->* La UI es responsive (teléfonos y PC).
->* Todos los personajes/películas/deportistas aparecen en una misma vista, en forma
->de grilla (cuadrícula) sin ningún orden en particular.
+>* Todas las películas aparecen en una misma vista, en forma de grilla (cuadrícula) sin ningún orden en particular.
 >* La vista no tiene paginación, se hace scroll desde el primer elemento hasta el último.
->* Cada cuadrícula contiene:
+>* Cada cuadrícula contiene: 
 >
->>* Nombre de personaje/película/deportista.
->>* [XXX]
->>
->* Al hacer _click/tap_ en cada cuadrícula sucede [XXX].
+>>* Poster, título y año de la película.
+
+>* Al hacer _click/tap_ en cada cuadrícula el poster hace zoom y el cursor se vuelve una manita.
 >
 >* La UI es exactamente igual al prototipo de alta fidelidad (colores, tamaños de bloques,tipo de letra, tamaño de letra, imágenes, etc. )
 
-**Definición de Terminado. Edita/agrega de acuerdo a tu implementación exactamente**
+**Definición de Terminado. **
 
 >* Todo el código está en la rama principal/main del repositorio.
 >
@@ -248,17 +245,18 @@ Yo como usuario [visitante del sitio] quiero poder VER todos los personajes/pel�
 >* Cada estudiante del equipo ha hecho _code review_ del código escrito por la(s) otra persona(s).
 >* Se hacen pruebas de usabilidad con al menos 2 usuarias y se incorporan las mejoras identificadas en la versión.
 
-#### [Historia de usuario 2]
 
-Yo como usuario [visitante del sitio] quiero poder FILTRAR los personajes/películas/deportistas según lo que me interesa ver en particular.
+## 5. Historia de Usuario 2
 
-**Criterios de Aceptación. Edita de acuerdo a tu implementación exactamente**
+Yo como usuaria de la página, deseo poder buscar mis películas filtrándolas por el año en el que fueron creadas, por el director que las dirigió y por el productor de cada una de ellas, según lo que me interesa ver en particular.
 
->* La UI es responsive (teléfonos y PC).
->* La UI contiene elementos para filtrar los datos (desplegables u otros).
+**Criterios de Aceptación.**
+
+>* La UI contiene elementos para filtrar las peliculas por productor, director, año y para regresar a todas las peliculas en cada 
+filtrado.(desplegables u otros).
 >* Al seleccionar valores de los elementos para filtrar, en la parte inferior de la página aparece solamente el tipo de contenido filtrado.
 
-**Definición de Terminado. Edita/agrega de acuerdo a tu implementación exactamente**
+**Definición de Terminado.**
 
 >* Hay un test unitario para la función de filtrado. Cobertura del 70%.
 >* Todo el código está en la rama principal/main del repositorio.
@@ -266,17 +264,17 @@ Yo como usuario [visitante del sitio] quiero poder FILTRAR los personajes/pelíc
 >* Cada estudiante del equipo ha hecho _code review_ del código escrito por la(s) otra persona(s).
 >* Se hacen pruebas de usabilidad con al menos 2 usuarias y se incorporan las mejoras identificadas en la versión.
 
-#### [Historia de usuario 3]
 
-Yo como usuario [visitante del sitio] quiero poder ORDENAR los personajes/películas/deportistas por sus nombres de manera alfabéticamente ascendente (A-Z) y descendente (Z-A).
+## 6. Historia de Usuario 3
 
-**Criterios de Aceptación. Edita de acuerdo a tu implementación exactamente:**
+Yo como usuaria, quisiera poder ordenar las películas por sus nombres de manera alfabéticamente ascendente (A-Z) y descendente (Z-A).
 
->* La UI es responsive (teléfonos y PC)
->* La UI contiene elementos para ordenar los datos (flechas, radios, desplegables u otros).
+**Criterios de Aceptación.**
+
+>* La UI contiene elementos para ordenar los datos alfabpeticamente de acuerdo al título de las películas.
 >* Al seleccionar valores de los elementos para ordenar, en la parte inferior de la página aparece solamente el contenido ordenado según el criterio seleccionado.
 
-**Definición de Terminado. Edita/agrega de acuerdo a tu implementación exactamente:**
+**Definición de Terminado.**
 
 >* Hay un test unitario para la función de ordenado. Cobertura del 70%.
 >* Todo el código está en la rama principal/main del repositorio.
@@ -284,7 +282,7 @@ Yo como usuario [visitante del sitio] quiero poder ORDENAR los personajes/pelíc
 >* Cada estudiante del equipo ha hecho _code review_ del código escrito por la(s) otra persona(s).
 >* Se hacen pruebas de usabilidad con al menos 2 usuarias y se incorporan las mejoras identificadas en la versión.
 
-#### [Historia de usuario 4]
+## 6. Historia de Usuario 4
 
 Yo como usuario [visitante del sitio] quiero poder BUSCAR los personajes/películas/deportistas según lo que me interesa ver en particular.
 
@@ -302,79 +300,28 @@ Yo como usuario [visitante del sitio] quiero poder BUSCAR los personajes/pelícu
 >* Cada estudiante del equipo ha hecho _code review_ del código escrito por la(s) otra persona(s).
 >* Se hacen pruebas de usabilidad con al menos 2 usuarias y se incorporan las mejoras identificadas en la versión.
 
-#### [Historia de usuario 5]
+## 7. Historia de Usuario 5
 
-Yo como usuario [visitante del sitio] quiero poder ver estadísticas de [XXX].
+Yo como usuaria desearía poder ver alguna estadística, conocer que Director tiene el porcentaje mayor de películas creadas en Studio Ghibli, o conocer el mayor Ranking que tenga la Casa productora.
 
-**Criterios de Aceptación. Edita de acuerdo a tu implementación exactamente:**
-
->* Escribe los criterios de aceptación
-
-**Definición de Terminado. Edita/agrega de acuerdo a tu implementación exactamente:**
-
->* Escribe la definición de terminado
-
-#### [Historia de usuario 6]
-
-A veces queremos agregar alguna característica que no necesariamente se puede
-expresar como una Historia de Usuario. En esos casos se les suele llamar PBI
-(product Backlog Item o elemento del backlog).
-
-**Ejemplo:**
-
-`js
-Crea un PBI que implique consumir la data de forma dinámica, cargando un archivo
-JSON por medio de`fetch`.
-La carpeta`src/data` contiene una versión `.js` y una `.json` de de cada set datos.
-`
-
-#### [Historia de usuario 7]
-
-Escribe una historia de usuario que implique agregarle visualizaciones gráficas a
-tu interfaz de usuario. Para ello te recomendamos explorar librerías de gráficas
-como [Chart.js](https://www.chartjs.org/) o [Google Charts](https://developers.google.com/chart/).
-
-**Criterios de Aceptación. Edita de acuerdo a tu implementación exactamente:**
-
->* Escribe los criterios de aceptación
-
-**Definición de Terminado. Edita/agrega de acuerdo a tu implementación exactamente:**
-
->* Escribe la definición de terminado
-
-#### [Historia de usuario 8]
-
-Crea un PBI que implique 100% de Coverage.
-
----
 
 ### Definición del producto
+Esta página esta pensada para que en un sólo sitio se encuentre la filmografía de Studio Ghibli, aquí pueden visualizar las películas
+así como alguna información de cada una de ellas. 
 
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
+Tienen la facilidad de filtrarlas según su preferencia de productor, director o año.
 
-### Diseño de la Interfaz de Usuario
 
 #### Prototipo de baja fidelidad
 
-Durante tu trabajo deberás haber hecho e iterado bocetos (_sketches_) de tu
-solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
-iteraciones que hagas, que las subas a tu repositorio y las menciones en tu
-`README.md`.
+Al comenzar el proyecto tuvimos una lluvia de ideas para poder acordar el rumbo que queríamos tomar como dupla
+en el diseño y organización del proyecto.
+
+Realizamos un prototipo de baja fidelidad, y posteriormente lo comenzamos a maquetar.
 
 #### Prototipo de alta fidelidad
 
-Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
-_User Interface_). Para eso debes aprender a utilizar alguna herramienta de
-diseño visual. Nosotros te recomendamos [Figma](https://www.figma.com/) que es
-una herramienta que funciona en el navegador y, además, puedes crear una cuenta
-gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
-Illustrator, Photoshop, PowerPoint, Keynote, etc.
-
-El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
-desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu
-diseño debe seguir los fundamentos de _visual design_.
+Lo siguiente que hicimos fue diseñar la Interfaz de Usuario en figma. 
 
 ### Pruebas unitarias
 
