@@ -37,7 +37,7 @@
     </pre>
     </h3>
 
-   
+<center>   
         <div class="menu">
           <button id="inicio" onclick="location.reload()">All Movies</button>
           <select class="categorie1" name="status1" id="selectOrder">
@@ -55,9 +55,15 @@
             <option value="Isao Takahata">Isao Takahata</option>
           </select>
 
-          <button id="random" onclick="location.reload()">Random &#128270;</button>
-
-          <select class="categorie3" name="status3" id="filterProducer">
+          <button id="random">Random &#128270;</button>
+          <dialog id="text" >
+                <h6>¿Sabías que?
+    <p>En promedio la aceptación de las películas</p>
+    <p>de Studio Ghibli es del 88%</p></h6>
+    <button id="close">Close</button>
+    
+              </dialog>
+              <select class="categorie3" name="status3" id="filterProducer">
             <option value="All Producers">All Producers</option>
             <option value="Isao Takahata">Isao Takahata</option>
             <option value="Hayao Miyazaki">Hayao Miyazaki</option>
@@ -84,21 +90,9 @@
             <option value="2013">2013</option>
             <option value="2014">2014</option>
           </select>
-
-          <select class="categorie5" name="status5" id="filterByTerrain">
-            <option value="Terraines">Terraines</option>
-            <option value="TODO">TODO</option>
-            <option value="Hill">Hill</option>
-            <option value="City">City</option>
-            <option value="River">River</option>
-            <option value="Mountain">Mountain</option>
-            <option value="Forest">Forest</option>
-            <option value="Plain">Plain</option>
-            <option value="Earthsea">Earthsea</option>
-            <option value="Ocean">Ocean</option>
-            <option value="Marsh">Marsh</option>
-          </select>
-
+         
+       
+        </center>
         </div>
   </nav>
 

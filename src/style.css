@@ -198,3 +198,26 @@ button:active {
   border: 2px groove rgba(101, 196, 251, 0.4);
 
 }
+
+#text::backdrop{
+  background-color:rgba(7, 7, 3, 0.7);
+}
+
+#text {
+ color:rgb(198, 198, 216);
+background-color:rgb(29, 29, 87);
+border-radius: 80px 20px;
+  border: 8px groove rgba(142, 200, 233, 0.4);
+  box-shadow: 30px white;
+  
+
+
+}
+
+h6 {
+font-size: 19px;
+font-family: 'Ghibli Regular';
+
+
+
+}

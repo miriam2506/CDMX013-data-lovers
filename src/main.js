@@ -1,5 +1,5 @@
 import allData from './data/ghibli/ghibli.js'
-import { filterByDirector, filterByProducer, filterByYear, sortFilms } from './data.js'
+import { filterByDirector, filterByProducer, filterByYear, sortFilms, getAverageScore } from './data.js'
 
 const root = document.getElementById('root')
 
@@ -25,7 +25,7 @@ const generadorHTML = (films) => {
 films.forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
 
 document.getElementById('filterDirector').addEventListener('change', function (e) {
-    
+
     root.innerHTML = ""
     if (e.target.value == "All Directors") {
         films.forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
@@ -47,7 +47,7 @@ document.getElementById('filterProducer').addEventListener('change', function (e
 })
 
 document.getElementById('filterReleaseyear').addEventListener('change', function (e) {
-    
+
     root.innerHTML = ""
     if (e.target.value == "Year") {
         films.forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
@@ -57,29 +57,35 @@ document.getElementById('filterReleaseyear').addEventListener('change', function
     }
 })
 
-
 document.getElementById('selectOrder').addEventListener('change', function (e) {
     root.innerHTML = ""
 
     if (e.target.value === "Order") {
-        films.forEach(oneFilm =>root.appendChild(generadorHTML(oneFilm)))
+        films.forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
     }
     else {
         sortFilms(films, e.target.value).forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
     }
 });
 
-/*document.getElementById('filterByTerrain').addEventListener('change', function (e) {
-    console.log (e.target.value)
-    root.innerHTML = ""
-    if (e.target.value == "Terraines") {
-        films.forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
-    }
-    else {
-        filterTerrain(films, e.target.value).forEach(oneFilm => root.appendChild(generadorHTML(oneFilm)))
+const mostrar= document.querySelector("#random");
+const message= document.querySelector("#text")
+const close= document.querySelector("#close")
 
-    }
+mostrar.addEventListener("click",()=>{
+message.showModal ();
 
 })
-*/
+close.addEventListener("click",()=>
+{
+
+    message.close();
+
+
+})
+
+    console.log (getAverageScore (films))
+    
+
+
 
