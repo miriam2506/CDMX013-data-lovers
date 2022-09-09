@@ -68,7 +68,17 @@ document.getElementById('selectOrder').addEventListener('change', function (e) {
     }
 });
 
-const mostrar= document.querySelector("#random");
+const cosa = document.querySelector('#random')
+cosa.addEventListener('click', function () {
+    const pantalla = getAverageScore(films)
+    root.innerHTML = `<h6>¿Sabías que?
+<p>En promedio la aceptación de las películas</p>
+<p>de Studio Ghibli es del ${pantalla} </p>
+</h6> `;
+
+});
+
+/*const mostrar= document.querySelector("#random");
 const message= document.querySelector("#text")
 const close= document.querySelector("#close")
 
@@ -83,9 +93,9 @@ close.addEventListener("click",()=>
 
 
 })
+*/
+console.log(getAverageScore(films))
 
-    console.log (getAverageScore (films))
-    
 
 
 

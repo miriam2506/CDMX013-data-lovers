@@ -52,7 +52,8 @@ export const getAverageScore = (films) => {
   })
   let division= acumulador / films.length
 let resultado=Math.round(division)
-return (resultado + "%")
+let total =resultado + "%"
+return (total)
 
 };
 
