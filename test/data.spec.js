@@ -1,25 +1,25 @@
-import { filterByDirector, filterByProducer, sortFilms} from '../src/data.js';
+import { filterByDirector, filterByProducer, sortFilms, getAverageScore} from '../src/data.js';
 
 describe('filterByDirector', () => {
-  it('filtra por Director Hayao Miyazaki', () => {
+  it('filter by Director Hayao Miyazaki', () => {
     let data=[
       {director:'Hayao Miyazaki'},
       {director:'Hiromasa Yonebayashi'}
     ];
   
-    let director='Hayao Miyazaki';
+    let director='Hayao Miyazaki'
   
-    let resultadoEsperado=[{director:'Hayao Miyazaki'}];
+    let expectedResult=[{director:'Hayao Miyazaki'}]
   
-    let resultadoReal=filterByDirector(data, director);
+    let realResult=filterByDirector(data, director)
   
-    expect(resultadoReal).toEqual(resultadoEsperado);
+    expect(realResult).toEqual(expectedResult)
   });
 
 });
 
 describe('filterByProducer', () => {
-  it('filtrar por producer Isao Takahata', () => {
+  it('filtter by producer Isao Takahata', () => {
 
     let data=[
         {producer:'Isao Takahata'},
@@ -28,11 +28,11 @@ describe('filterByProducer', () => {
   
       let producer='Isao Takahata';
       
-      let resultadoEsperado=[{producer:'Isao Takahata'}];
+      let expectedResult=[{producer:'Isao Takahata'}]
   
-      let resultadoReal=filterByProducer(data, producer);
+      let realResult=filterByProducer(data, producer)
   
-      expect(resultadoReal).toEqual(resultadoEsperado);
+      expect(realResult).toEqual(expectedResult)
     })
   });
 
@@ -45,11 +45,11 @@ describe('filterByProducer', () => {
     
         let sortTitleas='A to Z';
     
-        let resultadoEsperado=[{title:'Castle in the sky'},{title:'W'}];
+        let expectResult=[{title:'Castle in the sky'},{title:'W'}]
     
-        let resultadoReal=sortFilms(data, sortTitleas);
-    
-        expect(resultadoReal).toStrictEqual(resultadoEsperado);
+        let real=sortFilms(data, sortTitleas)
+      
+        expect(real).toStrictEqual(expectResult)
       });
   
       it('descending Order', () => {
@@ -59,12 +59,22 @@ describe('filterByProducer', () => {
       
           let sortTitledes='Z to A';
       
-          let resultadoEsperado=[{title:'When marnie was there'},{title:'Castle in the sky'}];
+          let expectResult=[{title:'When marnie was there'},{title:'Castle in the sky'}];
       
-          let resultadoReal=sortFilms(data, sortTitledes);
+          let realResult=sortFilms(data, sortTitledes)
       
-          expect(resultadoReal).toStrictEqual(resultadoEsperado);
-        });
+          expect(realResult).toStrictEqual(expectResult)
+        })
+      }); 
+  
+      describe ("score", () =>{
+        it ("average score", () =>{
+      
+          let data = [ {rt_score: "85"}, {rt_score: "75"}, {rt_score: "30"} ]
+                 let result=Math.round((85+75+30) / data.length)
+          expect (getAverageScore(data)).toStrictEqual(Number(result)+"%")
+      
+        })
+      
       });
-  
-  
+      

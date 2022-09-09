@@ -19,7 +19,6 @@ export const filterByYear = (films, releaseDate) => {
   return Years
 }
 
-
 export function sortFilms(films, orderOption) {
   if (orderOption === "A to Z") {
     return [...films].sort((a, b) => {
@@ -46,28 +45,16 @@ export function sortFilms(films, orderOption) {
 }
 
 export const getAverageScore = (films) => {
-  let acumulador = 0
+  let acumulator = 0
   films.forEach(film => {
-    acumulador+=Number(film.rt_score)
+    acumulator+=Number(film.rt_score)
+  
   })
-  let division= acumulador / films.length
-let resultado=Math.round(division)
-let total =resultado + "%"
+  
+  let division= acumulator / films.length
+let result=Math.round(division)
+let total =result + "%"
 return (total)
 
 };
 
-/*export const filterTerrain = films.forEach(film =>{
-return film.locations.forEach(location =>{
-return location.terrain.filter(terrain =>{
-return terrain
-})
-})
-})
-return filterTerrain
-export const filterByTitle = (films, titleName) => {
-const Titles = films.filter(film => {
-return film.title === titleName
-})
-return Titles
-}*/
