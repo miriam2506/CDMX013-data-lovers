@@ -30,17 +30,21 @@ Buscamos generar una propuesta visual pensando en cómo mostrar la información 
 Al comenzar el proyecto tuvimos una lluvia de ideas para poder acordar el rumbo que queríamos tomar como dupla en el diseño y organización del proyecto.
 
 Realizamos un prototipo de baja fidelidad, y posteriormente lo comenzamos a maquetar.
-src/img/Bajafidelidadghibli.jpg
+
+<img src="Bajafidelidadghibli.jpg">
 
 * Prototipo de alta fidellidad 
 [Figma](https://www.figma.com/file/4Eb3bzTMCkjWTNUvEUbxcH/STUDIO-GHIBLI?node-id=0%3A1)
 
 Para el Prototipo de alta fidelidad, quisimos compartir algo visualmente atractivo y dinámico.
 Lo siguiente que hicimos fue diseñar la Interfaz de Usuario en figma.
-src/img/Prototipo figma ghibli.png
+                                   
+<img src="Prototipo figma ghibli.png">
 
-El resultado final se asemeja con lo planedo
-src/img/Final _ghibli.png
+ * El resultado final se asemeja a lo planeado 
+                                 
+ <img src="Final_ghibli.png">
+ 
 
 ## 3. Trabajo Colaborativo
 [Trello](https://trello.com/b/6vgREqFZ/proyecto-2-data-lovers)
@@ -56,6 +60,7 @@ La usuaria objetivo, podrá de manera fácil filtrarlas según su preferencia de
 ## 5. Historias de Usuario
 
 * Historia de Usuaria 1
+
 Yo como fanática de Studio Ghibli, quiero conocer toda la filmografía por año y las más vistas, con el objetivo de saber la evolución de las producciones y las características de cada una.
 
 **Criterios de Aceptación**
@@ -75,8 +80,9 @@ Yo como fanática de Studio Ghibli, quiero conocer toda la filmografía por año
 
 
 * Historia de Usuaria 2
+
 Yo como usuaria de la página, deseo poder buscar mis películas filtrándolas por el año en el que fueron creadas, por el director que las dirigió y por el productor de cada una de ellas, según lo que me interesa ver en particular.
-src/img/Ghibli_director.png
+<img src="Ghibli_director.png">
 
 **Criterios de Aceptación.**
 
@@ -93,6 +99,7 @@ filtrado.(desplegables u otros).
 >* Se hacen pruebas de usabilidad con al menos 2 usuarias y se incorporan las mejoras identificadas en la versión.
 
 * Historia de Usuaria 3
+
 Yo como usuaria, quisiera poder ordenar las películas por sus nombres de manera alfabéticamente ascendente (A-Z) y descendente (Z-A).
 
 **Criterios de Aceptación.**
@@ -109,13 +116,14 @@ Yo como usuaria, quisiera poder ordenar las películas por sus nombres de manera
 >* Se hacen pruebas de usabilidad con al menos 2 usuarias y se incorporan las mejoras identificadas en la versión.
 
 * Historia de Usuaria 4
+
 Yo como usuaria desearía poder ver alguna estadística, conocer que Director tiene el porcentaje mayor de películas creadas en Studio Ghibli, o conocer el mayor Ranking que tenga la Casa productora.
 
 >* Se generó un boton random para que pudiera reflejarse ese dato a manera de información curiosa.
 
 ## 6. Pruebas Unitarias
 
-src/img/Test Ghbli.png
+<img src="Test Ghbli.png">
 
 
 ## 7. Objetivos de Aprendizaje
