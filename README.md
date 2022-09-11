@@ -30,17 +30,17 @@ Buscamos generar una propuesta visual pensando en cómo mostrar la información 
 Al comenzar el proyecto tuvimos una lluvia de ideas para poder acordar el rumbo que queríamos tomar como dupla en el diseño y organización del proyecto.
 
 Realizamos un prototipo de baja fidelidad, y posteriormente lo comenzamos a maquetar.
-<img src="Bajafidelidadghibli.jpg">
+src/img/Bajafidelidadghibli.jpg
 
 * Prototipo de alta fidellidad 
 [Figma](https://www.figma.com/file/4Eb3bzTMCkjWTNUvEUbxcH/STUDIO-GHIBLI?node-id=0%3A1)
 
 Para el Prototipo de alta fidelidad, quisimos compartir algo visualmente atractivo y dinámico.
 Lo siguiente que hicimos fue diseñar la Interfaz de Usuario en figma.
-<img src=Prototipo figma ghibli.png>
+src/img/Prototipo figma ghibli.png
 
 El resultado final se asemeja con lo planedo
-<img src=Final_ghibli.png>
+src/img/Final _ghibli.png
 
 ## 3. Trabajo Colaborativo
 [Trello](https://trello.com/b/6vgREqFZ/proyecto-2-data-lovers)
@@ -76,7 +76,7 @@ Yo como fanática de Studio Ghibli, quiero conocer toda la filmografía por año
 
 * Historia de Usuaria 2
 Yo como usuaria de la página, deseo poder buscar mis películas filtrándolas por el año en el que fueron creadas, por el director que las dirigió y por el productor de cada una de ellas, según lo que me interesa ver en particular.
-<img src=Ghibli_director.png>
+src/img/Ghibli_director.png
 
 **Criterios de Aceptación.**
 
@@ -115,7 +115,7 @@ Yo como usuaria desearía poder ver alguna estadística, conocer que Director ti
 
 ## 6. Pruebas Unitarias
 
-<img src=Test Ghbli.png>
+src/img/Test Ghbli.png
 
 
 ## 7. Objetivos de Aprendizaje
