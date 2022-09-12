@@ -47,14 +47,14 @@ export function sortFilms(films, orderOption) {
 export const getAverageScore = (films) => {
   let acumulator = 0
   films.forEach(film => {
-    acumulator+=Number(film.rt_score)
-  
+    acumulator += Number(film.rt_score)
+
   })
-  
-  let division= acumulator / films.length
-let result=Math.round(division)
-let total =result + "%"
-return (total)
+
+  let division = acumulator / films.length
+  let result = Math.round(division)
+  let total = result + "%"
+  return (total)
 
 };
 
