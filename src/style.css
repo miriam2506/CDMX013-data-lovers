@@ -2,7 +2,7 @@ body {
   font-family: 'Belleza', sans-serif;
   width: 100%;
   height: 100vh;
-  background-image: url("/src/img/wallpaperbetter.com_7680x4320\ \(2\).jpg");
+  background-image: url("./img/wallpaperbetter.com_7680x4320\ \(2\).jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
