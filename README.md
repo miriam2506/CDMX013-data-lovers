@@ -2,253 +2,87 @@
 
 ## Índice
 
-* [1. Proyecto Studio Ghibli](#1-proyecto)
-* [2. Objetivos de aprendizaje](#2-objetivos-de-aprendizaje)
-* [3. Historia de usuario 1](#3-HU1)
-* [4. Historia de usuario 2](#4-HU2)
-* [5. Historia de usuario 3](#5-HU3)
-* [6. Historia de usuario 4](#6-HU4)
-* [7. Historia de usuario 5](#6-HU5)
-* [8. Historia de usuario 6](#6-HU46)
-
-* [9. Pistas, tips y lecturas complementarias](#7-pistas-tips-y-lecturas-complementarias)
+* [1. Proyecto Studio Ghibli](#1-Proyecto-Studio-Ghibli)
+* [2. Resumen del Proyecto](#2-Resumen-del-Proyecto)
+* [3. Investigación ](#3-Investigación)
+* [4. Trabajo Colaborativo](#4-Trabajo-colaborartivo)
+* [5. Historias de Usuario](#5-Historias-de-Usuario)
+* [6. Pruebas Unitarias](#6-Pruebas-Unitarias)
+* [7. Objetivos de aprendizaje](#7-Objectivos-de-aprendizaje)
 
 ***
 
 ## 1. Proyecto Studio Ghibli
 
-Proyecto Data Lovers está enfocado en crear una página web dirigida al fandom de 
-Studio Ghibli específicamente. 
+El Proyecto a desarrollar de Data Lovers, se enfocó en crear una página web dirigida al fandom de Studio Ghibli específicamente.
+Decidimos generar una dinámica al estilo biblioteca, con toda la informacion básica de consulta sobre las producciones generadas por la casa animada.
 
-Uno de los objetivos de este proyecto es manipular un conjunto de datos para hacerlos
-accesibles a través de la página web.
+## 2. Resumen del proyecto
 
-Construimos la página enfocada a la filmografía, con la finalidad de poder mostrar 
-la data, realizar filtrado, ordenado y algún cálculo agregado.
+Dentro de la dupla, decidimos trabajar con la temática de Studio Ghibli, ya que hemos visto un par de sus pleículas y nos agrado la línea de ilustración y paleta de color.
 
-## 2. Objetivos de aprendizaje
+En el desarrollo de el corazón de este proyecto, aprendimos a manipular el conjunto de datos brindado, para hacerlos accesibles mediante un diseño en una págian web, para que así su segmento pueda utilizarlo.
 
-Los temas que implementamos y aprendimos en este proyecto fueron los siguientes:
+Construimos la página enfocada a la filmografía de el Studio, con la finalidad de poder mostrar la data, realizar filtrado de líneas en específico como por ejemplo por director, mostar su ordenado según su letra y compartir el score máximo de sus películas mediante un cálculo. 
 
-### HTML
+* Prototipo de baja fidelidad
+Buscamos generar una propuesta visual pensando en cómo mostrar la información básica de la web, y después por etapas las distintas historias de usuario. 
+Al comenzar el proyecto tuvimos una lluvia de ideas para poder acordar el rumbo que queríamos tomar como dupla en el diseño y organización del proyecto.
 
-- [Y] **Uso de HTML semántico**
+Realizamos un prototipo de baja fidelidad, y posteriormente lo comenzamos a maquetar.
 
-  <details><summary>Links</summary><p>
+<img src="Bajafidelidadghibli.jpg">
 
-  * [HTML semántico](https://curriculum.laboratoria.la/es/topics/html/02-html5/02-semantic-html)
-  * [Semantics - MDN Web Docs Glossary](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-</p></details>
+* Prototipo de alta fidellidad 
+[Figma](https://www.figma.com/file/4Eb3bzTMCkjWTNUvEUbxcH/STUDIO-GHIBLI?node-id=0%3A1)
 
-### CSS
+Para el Prototipo de alta fidelidad, quisimos compartir algo visualmente atractivo y dinámico.
+Lo siguiente que hicimos fue diseñar la Interfaz de Usuario en figma.
+                                   
+<img src="Prototipo figma ghibli.png">
 
-- [Y] **Uso de selectores de CSS**
+ * El resultado final se asemeja a lo planeado 
+                                 
+ <img src="Final_ghibli.png">
+ 
 
-  <details><summary>Links</summary><p>
+## 3. Trabajo Colaborativo
+[Trello](https://trello.com/b/6vgREqFZ/proyecto-2-data-lovers)
 
-  * [Intro a CSS](https://curriculum.laboratoria.la/es/topics/css/01-css/01-intro-css)
-  * [CSS Selectors - MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
-</p></details>
+Durante la planeación y desarrollo del proyecto se procuró la comunicación constante, horarios de trabajo y de estudio. La investigación de conceptos y aplicativos se hacia de manera individual para después hacer teamback e ir encontrando la solución al garabato o paso que estuvieramos llevando en cada sprint.
+El mapeo de avances y actividades lo llevamos con esa herramienta, así como el de nuestros objetios de aprendizaje, bloqueos y recursos de consulta.
 
-- [Y] **Modelo de caja (box model): borde, margen, padding**
+## 4. Investigación
+Esta página esta pensada para que en un sólo sitio se encuentre la filmografía de Studio Ghibli , aquí pueden visualizar las películas así como alguna información de cada una de ellas. 
 
-  <details><summary>Links</summary><p>
+La usuaria objetivo, podrá de manera fácil filtrarlas según su preferencia de productor, director o año, y obtener un dato curioso.
 
-  * [Box Model & Display](https://curriculum.laboratoria.la/es/topics/css/01-css/02-boxmodel-and-display)
-  * [The box model - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
-  * [Introduction to the CSS box model - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
-  * [CSS display - MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/display)
-  * [display - CSS Tricks](https://css-tricks.com/almanac/properties/d/display/)
-</p></details>
+## 5. Historias de Usuario
 
-- [Y] **Uso de flexbox en CSS**
+* Historia de Usuaria 1
 
-  <details><summary>Links</summary><p>
+Yo como fanática de Studio Ghibli, quiero conocer toda la filmografía por año y las más vistas, con el objetivo de saber la evolución de las producciones y las características de cada una.
 
-  * [A Complete Guide to Flexbox - CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-  * [Flexbox Froggy](https://flexboxfroggy.com/#es)
-  * [Flexbox - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
-</p></details>
-
-### Web APIs
-
-- [Y] **Uso de selectores del DOM**
-
-  <details><summary>Links</summary><p>
-
-  * [Manipulación del DOM](https://curriculum.laboratoria.la/es/topics/browser/02-dom/03-1-dom-methods-selection)
-  * [Introducción al DOM - MDN](https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction)
-  * [Localizando elementos DOM usando selectores - MDN](https://developer.mozilla.org/es/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
-</p></details>
-
-- [M] **Manejo de eventos del DOM (listeners, propagación, delegación)**
-
-  <details><summary>Links</summary><p>
-
-  * [Introducción a eventos - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Events)
-  * [EventTarget.addEventListener() - MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
-  * [EventTarget.removeEventListener() - MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/removeEventListener)
-  * [El objeto Event](https://developer.mozilla.org/es/docs/Web/API/Event)
-</p></details>
-
-- [M] **Manipulación dinámica del DOM**
-
-  <details><summary>Links</summary><p>
-
-  * [Introducción al DOM](https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction)
-  * [Node.appendChild() - MDN](https://developer.mozilla.org/es/docs/Web/API/Node/appendChild)
-  * [Document.createElement() - MDN](https://developer.mozilla.org/es/docs/Web/API/Document/createElement)
-  * [Document.createTextNode()](https://developer.mozilla.org/es/docs/Web/API/Document/createTextNode)
-  * [Element.innerHTML - MDN](https://developer.mozilla.org/es/docs/Web/API/Element/innerHTML)
-  * [Node.textContent - MDN](https://developer.mozilla.org/es/docs/Web/API/Node/textContent)
-</p></details>
-
-### JavaScript
-
-- [Y] **Diferenciar entre tipos de datos primitivos y no primitivos**
-
-- [M] **Arrays (arreglos)**
-
-  <details><summary>Links</summary><p>
-
-  * [Arreglos](https://curriculum.laboratoria.la/es/topics/javascript/04-arrays)
-  * [Array - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/)
-  * [Array.prototype.sort() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
-  * [Array.prototype.forEach() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-  * [Array.prototype.map() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-  * [Array.prototype.filter() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-  * [Array.prototype.reduce() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-</p></details>
-
-- [Y] **Objetos (key, value)**
-
-  <details><summary>Links</summary><p>
-
-  * [Objetos en JavaScript](https://curriculum.laboratoria.la/es/topics/javascript/05-objects/01-objects)
-</p></details>
-
-- [Y] **Variables (declaración, asignación, ámbito)**
-
-  <details><summary>Links</summary><p>
-
-  * [Valores, tipos de datos y operadores](https://curriculum.laboratoria.la/es/topics/javascript/01-basics/01-values-variables-and-types)
-  * [Variables](https://curriculum.laboratoria.la/es/topics/javascript/01-basics/02-variables)
-</p></details>
-
-- [M] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
-
-  <details><summary>Links</summary><p>
-
-  * [Estructuras condicionales y repetitivas](https://curriculum.laboratoria.la/es/topics/javascript/02-flow-control/01-conditionals-and-loops)
-  * [Tomando decisiones en tu código — condicionales - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
-</p></details>
-
-- [M] **Uso de bucles/ciclos (while, for, for..of)**
-
-  <details><summary>Links</summary><p>
-
-  * [Bucles (Loops)](https://curriculum.laboratoria.la/es/topics/javascript/02-flow-control/02-loops)
-  * [Bucles e iteración - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration)
-</p></details>
-
-- [M] **Funciones (params, args, return)**
-
-  <details><summary>Links</summary><p>
-
-  * [Funciones (control de flujo)](https://curriculum.laboratoria.la/es/topics/javascript/02-flow-control/03-functions)
-  * [Funciones clásicas](https://curriculum.laboratoria.la/es/topics/javascript/03-functions/01-classic)
-  * [Arrow Functions](https://curriculum.laboratoria.la/es/topics/javascript/03-functions/02-arrow)
-  * [Funciones — bloques de código reutilizables - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Functions)
-</p></details>
-
-- [Y] **Pruebas unitarias (unit tests)**
-
-  <details><summary>Links</summary><p>
-
-  * [Empezando con Jest - Documentación oficial](https://jestjs.io/docs/es-ES/getting-started)
-</p></details>
-
-- [Y] **Módulos de ECMAScript (ES Modules)**
-
-  <details><summary>Links</summary><p>
-
-  * [import - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/import)
-  * [export - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/export)
-  </p></details>
-
-- [Y] **Uso de linter (ESLINT)**
-
-- [Y] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
-
-- [M] **Diferenciar entre expresiones (expressions) y sentencias (statements)**
-
-### Control de Versiones (Git y GitHub)
-
-- [Y] **Git: Instalación y configuración**
-
-- [Y] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
-
-- [M] **Git: Integración de cambios entre ramas (branch, checkout, fetch, merge, reset, rebase, tag)**
-
-- [Y] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
-
-- [Y] **GitHub: Despliegue con GitHub Pages**
-
-  <details><summary>Links</summary><p>
-
-  * [Sitio oficial de GitHub Pages](https://pages.github.com/)
-</p></details>
-
-- [M] **GitHub: Colaboración en Github (branches | forks | pull requests | code review | tags)**
-
-### user-centricity
-
-- [Y] **Diseñar un producto o servicio poniendo a la usuaria en el centro**
-
-### product-design
-
-- [Y] **Crear prototipos de alta fidelidad que incluyan interacciones**
-
-- [Y] **Seguir los principios básicos de diseño visual**
-
-### research
-
-- [Y] **Planear y ejecutar testeos de usabilidad de prototipos en distintos niveles de fidelidad**
-
-  <details><summary>Links</summary><p>
-
-  * [Intro a testeos usabilidad](https://coda.io/@bootcamp-laboratoria/contenido-ux/test-de-usabilidad-15)
-  * [Pruebas con Usuarios 1 — ¿Qué, cuándo y para qué testeamos?](https://eugeniacasabona.medium.com/pruebas-con-usuarios-1-qu%C3%A9-cu%C3%A1ndo-y-para-qu%C3%A9-testeamos-7c3a89b4b5e7)
-</p></details>
-
-## 4. Historia de Usuario 1
-
-Yo como fanática de Studio Ghibli, quiero conocer toda la filmografía por año y las más vistas, con  el objetivo de saber la evolución de las producciones y las características de cada una.
-
-**Criterios de Aceptación.**
+**Criterios de Aceptación**
 
 >* Todas las películas aparecen en una misma vista, en forma de grilla (cuadrícula) sin ningún orden en particular.
 >* La vista no tiene paginación, se hace scroll desde el primer elemento hasta el último.
->* Cada cuadrícula contiene: 
->
->>* Poster, título y año de la película.
-
->* Al hacer _click/tap_ en cada cuadrícula el poster hace zoom y el cursor se vuelve una manita.
->
+>* Cada cuadrícula contiene: Poster, título y año de la película.
+>* Al hacer click/tap en cada cuadrícula el poster hace zoom y el cursor se vuelve una manita.
 >* La UI es exactamente igual al prototipo de alta fidelidad (colores, tamaños de bloques,tipo de letra, tamaño de letra, imágenes, etc. )
 
-**Definición de Terminado. **
+**Definición de Terminado**
 
 >* Todo el código está en la rama principal/main del repositorio.
->
 >* La página está publicada en Github Pages y es accesible mediante un enlace/link/liga.
->* Cada estudiante del equipo ha hecho _code review_ del código escrito por la(s) otra persona(s).
+>* Cada estudiante del equipo ha hecho code review del código escrito por la(s) otra persona(s).
 >* Se hacen pruebas de usabilidad con al menos 2 usuarias y se incorporan las mejoras identificadas en la versión.
 
 
-## 5. Historia de Usuario 2
+* Historia de Usuaria 2
 
 Yo como usuaria de la página, deseo poder buscar mis películas filtrándolas por el año en el que fueron creadas, por el director que las dirigió y por el productor de cada una de ellas, según lo que me interesa ver en particular.
+<img src="Ghibli_director.png">
 
 **Criterios de Aceptación.**
 
@@ -264,8 +98,7 @@ filtrado.(desplegables u otros).
 >* Cada estudiante del equipo ha hecho _code review_ del código escrito por la(s) otra persona(s).
 >* Se hacen pruebas de usabilidad con al menos 2 usuarias y se incorporan las mejoras identificadas en la versión.
 
-
-## 6. Historia de Usuario 3
+* Historia de Usuaria 3
 
 Yo como usuaria, quisiera poder ordenar las películas por sus nombres de manera alfabéticamente ascendente (A-Z) y descendente (Z-A).
 
@@ -282,266 +115,206 @@ Yo como usuaria, quisiera poder ordenar las películas por sus nombres de manera
 >* Cada estudiante del equipo ha hecho _code review_ del código escrito por la(s) otra persona(s).
 >* Se hacen pruebas de usabilidad con al menos 2 usuarias y se incorporan las mejoras identificadas en la versión.
 
-## 6. Historia de Usuario 4
-
-Yo como usuario [visitante del sitio] quiero poder BUSCAR los personajes/películas/deportistas según lo que me interesa ver en particular.
-
-**Criterios de Aceptación. Edita de acuerdo a tu implementación exactamente:**
-
->* La UI es responsive (teléfonos y PC)
->* La UI contiene elementos para filtrar los datos (desplegables u otros).
->* Al seleccionar valores de los elementos para filtrar, en la parte inferior de la página aparece solamente el tipo de contenido filtrado.
-
-**Definición de Terminado. Edita/agrega de acuerdo a tu implementación exactamente:**
-
->* Hay un test unitario para la función de búsqueda. Cobertura del 70%.
->* Todo el código está en la rama principal/main del repositorio.
->* La página está publicada en Github Pages y es accesible mediante un enlace/link/liga.
->* Cada estudiante del equipo ha hecho _code review_ del código escrito por la(s) otra persona(s).
->* Se hacen pruebas de usabilidad con al menos 2 usuarias y se incorporan las mejoras identificadas en la versión.
-
-## 7. Historia de Usuario 5
+* Historia de Usuaria 4
 
 Yo como usuaria desearía poder ver alguna estadística, conocer que Director tiene el porcentaje mayor de películas creadas en Studio Ghibli, o conocer el mayor Ranking que tenga la Casa productora.
 
+>* Se generó un boton random para que pudiera reflejarse ese dato a manera de información curiosa.
 
-### Definición del producto
-Esta página esta pensada para que en un sólo sitio se encuentre la filmografía de Studio Ghibli, aquí pueden visualizar las películas
-así como alguna información de cada una de ellas. 
+## 6. Pruebas Unitarias
 
-Tienen la facilidad de filtrarlas según su preferencia de productor, director o año.
+<img src="Test Ghbli.png">
 
 
-#### Prototipo de baja fidelidad
+## 7. Objetivos de Aprendizaje
 
-Al comenzar el proyecto tuvimos una lluvia de ideas para poder acordar el rumbo que queríamos tomar como dupla
-en el diseño y organización del proyecto.
+### HTML
+- [.] **Uso de HTML semántico**
 
-Realizamos un prototipo de baja fidelidad, y posteriormente lo comenzamos a maquetar.
+  <details><summary>Links</summary><p>
 
-#### Prototipo de alta fidelidad
+  * [HTML semántico](https://curriculum.laboratoria.la/es/topics/html/02-html5/02-semantic-html)
+  * [Semantics - MDN Web Docs Glossary](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
+</p></details>
 
-Lo siguiente que hicimos fue diseñar la Interfaz de Usuario en figma. 
+### CSS
 
-### Pruebas unitarias
+- [.] **Uso de selectores de CSS**
 
-El _boilerplate_ de este proyecto no incluye Pruebas Unitarias (_tests_), así es
-que  tendrás que escribirlas tú para las funciones encargadas de  _procesar_,
-_filtrar_ y _ordenar_ la data, así como _calcular_ estadísticas.
+  <details><summary>Links</summary><p>
 
-Tus _pruebas unitarias_ deben dar una cobertura del 70% de _statements_
-(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
-(_ramas_) del archivo `src/data.js` que contenga tus funciones y está detallado
-en la sección de [Consideraciones técnicas](#srcdatajs).
+  * [Intro a CSS](https://curriculum.laboratoria.la/es/topics/css/01-css/01-intro-css)
+  * [CSS Selectors - MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
+</p></details>
 
-## 6. Consideraciones técnicas
+- [.] **Modelo de caja (box model): borde, margen, padding**
 
-La lógica del proyecto debe estar implementada completamente en JavaScript
-(ES6), HTML y CSS. En este proyecto NO está permitido usar librerías o
-frameworks, solo [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e),
-con la excepción de librerías para hacer gráficas (charts); ver
-[_Parte opcional_](#6-hacker-edition) más arriba.
+  <details><summary>Links</summary><p>
 
-El _boilerplate_ contiene una estructura de archivos como punto de partida así
-como toda la configuración de dependencias:
+  * [Box Model & Display](https://curriculum.laboratoria.la/es/topics/css/01-css/02-boxmodel-and-display)
+  * [The box model - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
+  * [Introduction to the CSS box model - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
+  * [CSS display - MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/display)
+  * [display - CSS Tricks](https://css-tricks.com/almanac/properties/d/display/)
+</p></details>
 
-```text
-.
-├── EXTRA.md
-├── README.md
-├── package.json
-├── src
-|  ├── data (según con qué data trabajes)
-|  |  ├── lol
-|  |  |  ├── lol.js
-|  |  |  ├── lol.json
-|  |  |  └── README.md
-|  |  ├── pokemon
-|  |  |  ├── pokemon.js
-|  |  |  ├── pokemon.json
-|  |  |  └── README.md
-|  |  └── rickandmorty
-|  |  |  ├── rickandmorty.js
-|  |  |  ├── rickandmorty.json
-|  |  |  └── README.md
-|  |  └── athletes
-|  |  |  ├── athletes.js
-|  |  |  ├── athletes.json
-|  |  |  └── README.md
-|  |  └── ghibli
-|  |  |  ├── ghibli.js
-|  |  |  ├── ghibli.json
-|  |  |  └── README.md
-|  ├── data.js
-|  ├── index.html
-|  ├── main.js
-|  └── style.css
-└── test
-   └── data.spec.js
+- [.] **Uso de flexbox en CSS**
 
-directory: 7 file: 20
-```
+  <details><summary>Links</summary><p>
 
-### `src/index.html`
+  * [A Complete Guide to Flexbox - CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+  * [Flexbox Froggy](https://flexboxfroggy.com/#es)
+  * [Flexbox - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+</p></details>
 
-Como en el proyecto anterior, existe un archivo `index.html`. Como ya sabes,
-acá va la página que se mostrará al usuario. También nos sirve para indicar
-qué scripts se usarán y unir todo lo que hemos hecho.
+### Web APIs
 
-### `src/main.js`
+- [.] **Uso de selectores del DOM**
 
-Recomendamos usar `src/main.js` para todo tu código que tenga que ver con
-mostrar los datos en la pantalla. Con esto nos referimos básicamente a la
-interacción con el DOM. Operaciones como creación de nodos, registro de
-manejadores de eventos (_event listeners_ o _event handlers_), ....
+  <details><summary>Links</summary><p>
 
-Esta no es la única forma de dividir tu código, puedes usar más archivos y
-carpetas, siempre y cuando la estructura sea clara para tus compañeras.
+  * [Manipulación del DOM](https://curriculum.laboratoria.la/es/topics/browser/02-dom/03-1-dom-methods-selection)
+  * [Introducción al DOM - MDN](https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction)
+  * [Localizando elementos DOM usando selectores - MDN](https://developer.mozilla.org/es/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
+</p></details>
 
-En este archivo encontrarás una serie de _imports_ _comentados_. Para _cargar_
-las diferentes fuentes de datos tendrás que _descomentar_ la línea
-correspondiente.
+- [.] **Manejo de eventos del DOM (listeners, propagación, delegación)**
 
-Por ejemplo, si "descomentamos" la siguiente línea:
+  <details><summary>Links</summary><p>
 
-```js
-// import data from './data/lol/lol.js';
-```
+  * [Introducción a eventos - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Events)
+  * [EventTarget.addEventListener() - MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
+  * [EventTarget.removeEventListener() - MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/removeEventListener)
+  * [El objeto Event](https://developer.mozilla.org/es/docs/Web/API/Event)
+</p></details>
 
-La línea quedaría así:
+- [.] **Manipulación dinámica del DOM**
 
-```js
-import data from './data/lol/lol.js';
-```
+  <details><summary>Links</summary><p>
 
-Y ahora tendríamos la variable `data` disponible en el script `src/main.js`.
+  * [Introducción al DOM](https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction)
+  * [Node.appendChild() - MDN](https://developer.mozilla.org/es/docs/Web/API/Node/appendChild)
+  * [Document.createElement() - MDN](https://developer.mozilla.org/es/docs/Web/API/Document/createElement)
+  * [Document.createTextNode()](https://developer.mozilla.org/es/docs/Web/API/Document/createTextNode)
+  * [Element.innerHTML - MDN](https://developer.mozilla.org/es/docs/Web/API/Element/innerHTML)
+  * [Node.textContent - MDN](https://developer.mozilla.org/es/docs/Web/API/Node/textContent)
+</p></details>
 
-### `src/data.js`
+### JavaScript
 
-El corazón de este proyecto es la manipulación de datos a través de arreglos
-y objetos.
+- [.] **Diferenciar entre tipos de datos primitivos y no primitivos**
 
-Te recomendamos que este archivo contenga toda la funcionalidad que corresponda
-a obtener, procesar y manipular datos (tus funciones). Por ejemplo:
+- [.] **Arrays (arreglos)**
 
-* `filterData(data, condition)`: esta función `filter` o filtrar recibiría la
-  data, y nos retornaría aquellos datos que sí cumplan con la condición.
+  <details><summary>Links</summary><p>
 
-* `sortData(data, sortBy, sortOrder)`: esta función `sort` u ordenar
-  recibe tres parámetros.
-  El primer parámetro, `data`, nos entrega los datos.
-  El segundo parámetro, `sortBy`, nos dice con respecto a cuál de los campos de
-  la data se quiere ordenar.
-  El tercer parámetro, `sortOrder`, indica si se quiere ordenar de manera
-  ascendente o descendente.
+  * [Arreglos](https://curriculum.laboratoria.la/es/topics/javascript/04-arrays)
+  * [Array - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/)
+  * [Array.prototype.sort() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+  * [Array.prototype.forEach() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+  * [Array.prototype.map() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+  * [Array.prototype.filter() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+  * [Array.prototype.reduce() - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+</p></details>
 
-* `computeStats(data)`: la función `compute` o calcular, nos permitirá hacer
-  cálculos estadísticos básicos para ser mostrados de acuerdo a la data
-  proporcionada.
+- [.] **Objetos (key, value)**
 
-Estos nombres de funciones y de parámetros son solamente referenciales, lo que
-decidas depende de tu propia implementación.
+  <details><summary>Links</summary><p>
 
-Estas funciones deben ser [_puras_](https://medium.com/laboratoria-developers/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-2-funciones-puras-b99e08c2895d)
-e independientes del DOM. Estas funciones serán después usadas desde el archivo
-`src/main.js`, al cargar la página, y cada vez que el usuario interactúe (click,
-filtrado, ordenado, ...).
+  * [Objetos en JavaScript](https://curriculum.laboratoria.la/es/topics/javascript/05-objects/01-objects)
+</p></details>
 
-### `src/data`
+- [.] **Variables (declaración, asignación, ámbito)**
 
-En esta carpeta están los datos de las diferentes fuentes. Encontrarás una
-carpeta por cada fuente, y dentro de cada carpeta dos archivos: uno con la
-extensión `.js` y otro `.json`. Ambos archivos contienen la misma data; la
-diferencia es que el `.js` lo usaremos a través de una etiqueta `<script>`,
-mientras que el `.json` está ahí para opcionalmente cargar la data de forma
-asíncrona con [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
-(ver sección de [_Parte Opcional_](#6-hacker-edition)).
+  <details><summary>Links</summary><p>
 
-### `test/data.spec.js`
+  * [Valores, tipos de datos y operadores](https://curriculum.laboratoria.la/es/topics/javascript/01-basics/01-values-variables-and-types)
+  * [Variables](https://curriculum.laboratoria.la/es/topics/javascript/01-basics/02-variables)
+</p></details>
 
-Tendrás también que completar las pruebas unitarias de las funciones
-implementadas en el archivo `data.js`.
+- [.] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
 
-## 7. Pistas, tips y lecturas complementarias
+  <details><summary>Links</summary><p>
 
-### Primeros pasos
+  * [Estructuras condicionales y repetitivas](https://curriculum.laboratoria.la/es/topics/javascript/02-flow-control/01-conditionals-and-loops)
+  * [Tomando decisiones en tu código — condicionales - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
+</p></details>
 
-Antes de empezar a escribir código, debes definir qué deberá hacer el producto
-en base al conocimiento que puedas obtener de tu usuario. Estas preguntas te
-pueden ayudar:
+- [.] **Uso de bucles/ciclos (while, for, for..of)**
 
-* ¿Quiénes son los principales usuarios de producto?
-* ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
-* ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
-* ¿Cuándo utilizan o utilizarían el producto?
-* Toda tu investigación previa debe tener como resultado todas las Historias
-  de Usuario de tu proyecto.
-* No hagas los prototipos de alta fidelidad de todas tus Historias. Comienza
-  solamente por los que se necesiten para tu Sprint 1 (semana 1 de trabajo). Más
-  pistas en la guía de organización para el proyecto.
+  <details><summary>Links</summary><p>
 
-Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
+  * [Bucles (Loops)](https://curriculum.laboratoria.la/es/topics/javascript/02-flow-control/02-loops)
+  * [Bucles e iteración - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration)
+</p></details>
 
-1. Una de las integrantes del equipo debe realizar un :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) del repo de tu cohort,
-   tus _coaches_ te compartirán un _link_ a un repo y te darán acceso de lectura
-   en ese repo. La otra integrante del equipo deber hacer un fork **del
-   repositorio de su compañera** y
-   [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1) un `remote`
-   hacia el mismo.
-2. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-   tu _fork_ a tu computadora (copia local).
-3. 📦 Instala las dependencias del proyecto con el comando `npm install`. Esto
-   asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
-4. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
-   pruebas unitarias (unit tests) con el comando `npm test`.
-5. Para ver la interfaz de tu programa en el navegador, usa el comando
-  `npm start` para arrancar el servidor web y dirígete a
-  `http://localhost:5000` en tu navegador.
-6. A codear se ha dicho! :rocket:
+- [.] **Funciones (params, args, return)**
 
-### Contenido de referencia
+  <details><summary>Links</summary><p>
 
-#### Diseño de experiencia de usuario (User Experience Design)
+  * [Funciones (control de flujo)](https://curriculum.laboratoria.la/es/topics/javascript/02-flow-control/03-functions)
+  * [Funciones clásicas](https://curriculum.laboratoria.la/es/topics/javascript/03-functions/01-classic)
+  * [Arrow Functions](https://curriculum.laboratoria.la/es/topics/javascript/03-functions/02-arrow)
+  * [Funciones — bloques de código reutilizables - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Functions)
+</p></details>
 
-* Investigación con usuarios / entrevistas
-* Principios de diseño visual
+- [.] **Pruebas unitarias (unit tests)**
 
-#### Desarrollo Front-end
+  <details><summary>Links</summary><p>
 
-* Unidad de testing en curso de JavaScript en LMS.
-* Unidad de arreglos en curso de JavaScript en LMS.
-* Unidad de objetos en curso de JavaScript en LMS.
-* Unidad de funciones en curso de JavaScript en LMS.
-* Unidad de DOM en curso de Browser JavaScript en LMS.
-* [Array en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array)
-* [Array.sort en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/sort)
-* [Array.map en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/map)
-* [Array.filter en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/filter)
-* [Array.reduce en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/reduce)
-* [Array.forEach en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/forEach)
-* [Object.keys en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/keys)
-* [Object.entries en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/entries)
-* [Fetch API en MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-* [json.org](https://json.org/json-es.html)
-* [expressions-vs-statements](https://2ality.com/2012/09/expressions-vs-statements.html)
-* [expresión vs sentencia](https://openclassrooms.com/en/courses/4309531-descubre-las-funciones-en-javascript/5108986-diferencia-entre-expresion-y-sentencia)
-* [datos atómicos vs datos estructurados](https://www.todojs.com/tipos-datos-javascript-es6/)
-* [Modulos: Export](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/export)
-* [Modulos: Import](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/import)
+  * [Empezando con Jest - Documentación oficial](https://jestjs.io/docs/es-ES/getting-started)
+</p></details>
 
-#### Herramientas
+- [ ] **Módulos de ECMAScript (ES Modules)**
 
-* [Git](https://git-scm.com/)
-* [GitHub](https://github.com/)
-* [GitHub Pages](https://pages.github.com/)
-* [Node.js](https://nodejs.org/)
-* [Jest](https://jestjs.io/)
+  <details><summary>Links</summary><p>
 
-#### Organización del Trabajo
+  * [import - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/import)
+  * [export - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/export)
+</p></details>
 
-* [Historias de Usuario](https://www.youtube.com/watch?v=ky6wFiF5vMk&t=344s).
-  Ojo que Cris no diferencia _Definición de terminado_ de _Criterios de
-  Aceptación_ y nosotros sí lo haremos. Más detalles en la guía.
-* [Cómo dividir H.U.](https://www.youtube.com/watch?v=Ueq786iZ30I&t=341s)
-* [Guía para Data Lovers](https://docs.google.com/presentation/d/e/2PACX-1vQhx9D36NjpH-Daea-ITPUDUzNL8ZiNAprq_7b5PSUrfutk45tEtaOLz2lmd8f54_5jX1hypDM8f8SM/pub?start=false&loop=false&delayms=60000)
+- [ ] **Uso de linter (ESLINT)**
+
+- [ ] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
+
+- [ ] **Diferenciar entre expresiones (expressions) y sentencias (statements)**
+
+### Control de Versiones (Git y GitHub)
+
+- [.] **Git: Instalación y configuración**
+
+- [.] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
+
+- [.] **Git: Integración de cambios entre ramas (branch, checkout, fetch, merge, reset, rebase, tag)**
+
+- [.] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
+
+- [.] **GitHub: Despliegue con GitHub Pages**
+
+  <details><summary>Links</summary><p>
+
+  * [Sitio oficial de GitHub Pages](https://pages.github.com/)
+</p></details>
+
+- [.] **GitHub: Colaboración en Github (branches | forks | pull requests | code review | tags)**
+
+### user-centricity
+
+- [.] **Diseñar un producto o servicio poniendo a la usuaria en el centro**
+
+### product-design
+
+- [.] **Crear prototipos de alta fidelidad que incluyan interacciones**
+
+- [.] **Seguir los principios básicos de diseño visual**
+
+### research
+
+- [.] **Planear y ejecutar testeos de usabilidad de prototipos en distintos niveles de fidelidad**
+
+  <details><summary>Links</summary><p>
+
+  * [Intro a testeos usabilidad](https://coda.io/@bootcamp-laboratoria/contenido-ux/test-de-usabilidad-15)
+  * [Pruebas con Usuarios 1 — ¿Qué, cuándo y para qué testeamos?](https://eugeniacasabona.medium.com/pruebas-con-usuarios-1-qu%C3%A9-cu%C3%A1ndo-y-para-qu%C3%A9-testeamos-7c3a89b4b5e7)
+</p></details>
+
