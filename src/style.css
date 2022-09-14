@@ -19,18 +19,18 @@ body {
 h1 {
   font-family: 'Ghibli Regular';
   position: absolute;
-  left: 485px;
-  top: 120px;
+  left: 500px;
+  top: 179px;
   color: transparent;
   margin: auto;
-  font-size: 33px;
+  font-size: 32px;
   -webkit-text-stroke: .2px rgb(182, 99, 36);
 }
 
 .fire {
   display: flex;
   margin-top: -20px;
-  margin-left: 210px;
+  margin-left: 180px;
   border-radius: 10px 10px;
 }
 
